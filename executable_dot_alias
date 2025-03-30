@@ -1,0 +1,48 @@
+#alias ls='ls -a --color=auto'
+alias grep='grep --color=auto'
+#alias byehypr='hyprctl dispatch exit'
+alias shdwn='sudo systemctl poweroff'
+alias rbt='sudo reboot'
+#alias wins='sudo virsh start win11 && looking-glass-client -F'
+alias pain='paru -S'
+alias pare='paru -R'
+alias pared='paru -Rns'
+alias pase='paru -Ss'
+alias update-grub='sudo grub-mkconfig -o /boot/grub/grub.cfg'
+#alias arcs="sudo virsh start archlinux"
+#alias arcq="sudo virsh shutdown archlinux"
+#alias wins="sudo virsh start win11 && looking-glass-client -F"
+#alias winq="sudo virsh shutdown win11"
+alias vm='sudo virsh start debian12 && sleep 5 && sudo virsh console debian12'
+alias vms='sudo virsh start debian12'
+alias vmq='sudo virsh shutdown debian12'
+alias sshvm='echo "Connecting to school@dva249" && ssh school@192.168.122.242'
+alias rbtwin="sudo grub-reboot 2 && reboot"
+alias guis="sudo virsh start debianXfce && sudo virt-manager --connect qemu:///system --show-domain-console debianXfce"
+alias cases='virsh start case'
+alias casegui='sudo virt-manager --connect qemu:///system --show-domain-console case'
+alias sshcase='ssh school@192.168.122.136'
+alias caseq='virsh shutdown case'
+#alias shdwn='update-grub && shutdown'
+#alias rbt='update-grub && reboot'
+alias c='clear'
+alias ff='fastfetch'
+alias pf='pfetch'
+alias ls='eza -a --icons'
+alias ll='eza -al --icons'
+alias lt='eza -a --tree --level=1 --icons'
+alias shutdown='systemctl poweroff'
+alias v='nvim'
+alias matrix='cmatrix'
+alias wifi='nmtui'
+alias ch='chezmoi'
+
+alias gs="git status"
+alias ga="git add"
+alias gc="git commit -m"
+alias gp="git push"
+alias gpl="git pull"
+alias gst="git stash"
+alias gsp="git stash; git pull"
+alias gcheck="git checkout"
+alias cat='bat'
