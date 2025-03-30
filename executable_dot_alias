@@ -28,15 +28,16 @@ alias caseq='virsh shutdown case'
 alias c='clear'
 alias ff='fastfetch'
 alias pf='pfetch'
-alias ls='eza -a --icons'
 alias ll='eza -al --icons'
+alias ls='eza --icons'
+alias la='eza -a --icons'
 alias lt='eza -a --tree --level=1 --icons'
 alias shutdown='systemctl poweroff'
 alias v='nvim'
 alias matrix='cmatrix'
 alias wifi='nmtui'
 alias ch='chezmoi'
-
+alias che='chezmoi edit'
 alias gs="git status"
 alias ga="git add"
 alias gc="git commit -m"
