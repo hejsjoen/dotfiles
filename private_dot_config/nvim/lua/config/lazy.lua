@@ -52,7 +52,7 @@ require("lazy").setup({
   },
 })
 require("mason").setup({
-  registries = {
+  registriesgistries = {
     "github:mason-org/mason-registry",
     "github:crashdummyy/mason-registry",
   },

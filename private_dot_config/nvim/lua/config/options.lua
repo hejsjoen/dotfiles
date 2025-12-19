@@ -11,12 +11,6 @@ return {
       vim.lsp.protocol.make_client_capabilities(),
       cmp_ok and cmp_nvim_lsp.default_capabilities() or blink_ok and blink_cmp.get_lsp_capabilities() or {}
     )
-    require("mason").setup({
-      registries = {
-        "github:mason-org/mason-registry",
-        "github:crashdummyy/mason-registry",
-      },
-    })
     require("mason-lspconfig").setup_handlers({
       function(server)
         local config = vim.tbl_deep_extend("error", {
@@ -83,6 +77,13 @@ return {
         mappings = {
           edit = "i",
           remove = "dd",
+        },
+      })({
+        "seblyng/roslyn.nvim",
+        ---@module 'roslyn.config'
+        ---@type RoslynNvimConfig
+        opts = {
+          -- your configuration comes here; leave empty for default settings
         },
       })
 

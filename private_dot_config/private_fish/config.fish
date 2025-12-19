@@ -3,6 +3,8 @@ if status is-interactive
     fastfetch --config examples/8
 end
 # ~/.config/fish/config.fish
+#
+export CHROME_EXECUTABLE="/usr/bin/chromium"
 source ~/.alias
 zoxide init fish | source
 starship init fish | source
