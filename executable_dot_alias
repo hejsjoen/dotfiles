@@ -17,7 +17,8 @@ alias vm='sudo virsh start debian12 && sleep 5 && sudo virsh console debian12'
 alias vms='sudo virsh start debian12'
 alias vmq='sudo virsh shutdown debian12'
 alias sshvm='echo "Connecting to school@dva249" && ssh school@192.168.122.242'
-alias rbtwin="sudo grub-reboot 2 && reboot"
+alias rbtwin="systemctl reboot --boot-loader-entry=auto-windows"
+alias rbtuefi='systemctl reboot --firmware-setup'
 alias guis="sudo virsh start debianXfce && sudo virt-manager --connect qemu:///system --show-domain-console debianXfce"
 alias cases='virsh start case'
 alias casegui='sudo virt-manager --connect qemu:///system --show-domain-console case'
